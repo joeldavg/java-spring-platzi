@@ -41,17 +41,6 @@ public class Compra {
 	@OneToMany(mappedBy = "producto")
 	private List<ComprasProducto> productos;
 	
-	public Compra() {
-	}
-
-	public Compra(String idCliente, LocalDateTime fecha, String medioPago, String comentario, String estado) {
-		this.idCliente = idCliente;
-		this.fecha = fecha;
-		this.medioPago = medioPago;
-		this.comentario = comentario;
-		this.estado = estado;
-	}
-
 	public Integer getIdCompra() {
 		return idCompra;
 	}

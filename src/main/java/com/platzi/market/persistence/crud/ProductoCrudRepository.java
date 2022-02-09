@@ -9,7 +9,7 @@ import com.platzi.market.persistence.entity.Producto;
 
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
 	
-	List<Producto> findByIdCategoriaOrderNombreAsc(int idCategoria);
+	List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
 	
 	Optional<List<Producto>> findByCantidadStockLessThanAndEstado(int cantidadStock, boolean estado);
 }
